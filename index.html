@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Julien</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="titre">
+    Commande de baguettes
+  </h1>
+
+
+  <form class="formulaire-baguette">
+    <div>
+      <label>
+        Votre nom <span class="required">*</span>
+      </label>
+      <input type="text" name="nom" placeholder="Berthier" required />
+    </div>
+
+    <div>
+      <label>
+        Votre prénom <span class="required">*</span>
+      </label>
+      <input type="text" name="prenom" placeholder="Johnny" required />
+    </div>
+
+    <div>
+      <label>
+        Nombre de baguettes <span class="required">*</span>
+      </label>
+      <input type="number" name="nbBaguette" min="5" max="50" placeholder="5-50" required />
+    </div>
+
+    <div>
+      <label>
+        Heure de retrait <span class="required">*</span>
+      </label>
+      <input type="time" name="heure" min="10:00" max="19:00" required />
+    </div>
+
+    <div>
+      <label>
+        Observations
+      </label>
+      <textarea name="observation" placeholder="Observations" rows="15"></textarea>
+    </div>
+
+    <input type="submit" value="Soumettre"/>
+
+  </form>
+</body>
+
+</html>
